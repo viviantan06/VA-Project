@@ -161,7 +161,8 @@
                     .style("opacity", .9);
                 tooltip.html(`Year: ${d.year}<br>Proportion Employed: ${d.proportion}%`)
                     .style("left", (event.pageX) + "px")
-                    .style("top", (event.pageY - 28) + "px");
+                    .style("top", (event.pageY - 28) + "px")
+                    .style("font-size", "14px");
             })
             .on("mouseout", function(d) {
                 tooltip.transition()
